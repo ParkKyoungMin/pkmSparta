@@ -1,0 +1,28 @@
+package com.example.calculate;
+
+public class ch3 {
+
+    double number1 = 0;
+    double number2 = 0;
+
+    public double add(number1, number2) {
+        return number1 + number2;
+    }
+
+    public double minus(number1, number2) {
+        return number1 - number2;
+    }
+
+    public double multiplication(number1, number2) {
+        return number1 + number2;
+    }
+
+    public double division(number1, number2) {
+        if (number2 == 0) {
+            System.out.println("두번째 숫자는 0이 될 수 없습니다.");
+        }
+        return number1 / number2;
+
+    }
+}
+
