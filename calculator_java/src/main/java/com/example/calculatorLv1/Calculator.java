@@ -3,7 +3,7 @@ package com.example.calculatorLv1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Lv1 {
+public class Calculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); // Scanner 객체 생성, 사용자 입력을 받기 위함
 
