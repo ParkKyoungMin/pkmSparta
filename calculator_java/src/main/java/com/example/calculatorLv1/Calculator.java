@@ -12,17 +12,17 @@ public class Calculator {
             while (!power.equals("exit")) { // "exit" 입력 시까지 반복
                 try {
                     // 첫 번째 숫자 입력
-                    System.out.println("첫 번째 숫자를 입력하시오 : ");
+                    System.out.print("첫 번째 숫자를 입력하시오 : ");
                     int firstNumber = sc.nextInt(); // 사용자로부터 첫 번째 숫자 입력 받음
 
                     // 두 번째 숫자 입력
-                    System.out.println("두 번째 숫자를 입력하시오 : ");
+                    System.out.print("두 번째 숫자를 입력하시오 : ");
                     int secondNumber = sc.nextInt(); // 사용자로부터 두 번째 숫자 입력 받음
 
                     sc.nextLine(); // 입력 버퍼를 비우기 위해 nextLine 호출
 
                     // 사칙연산 기호 입력
-                    System.out.println("사칙연산 기호를 입력하시오. ");
+                    System.out.print("사칙연산 기호를 입력하시오. ");
                     String operator = sc.nextLine(); // 사용자로부터 연산자 입력 받음
                     char operatorBasic = operator.charAt(0); // 연산자의 첫 번째 문자 추출
 
