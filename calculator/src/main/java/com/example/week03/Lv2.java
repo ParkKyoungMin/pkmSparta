@@ -79,7 +79,7 @@ public class Lv2 {
                 System.out.println("두번째 정수를 입력 : ");
                 int secondNumber = sc.nextInt();
 
-                sc.nextLine(); // 버퍼 비우기
+                sc.nextLine();
                 System.out.println("연산자를 입력 : ");
                 char operator = sc.nextLine().charAt(0);
 
@@ -88,7 +88,6 @@ public class Lv2 {
                 System.out.println("현재 저장된 메모리 : " + ca.getMemory());
 
 
-                // 메모리에서 가장 먼저 저장된 데이터 삭제
                 ca.setMemory(0, "10 + 10 = 19");
                 System.out.println("수정된 메모리 : " + ca.getMemory());
                 ca.removeFirstMemory();
