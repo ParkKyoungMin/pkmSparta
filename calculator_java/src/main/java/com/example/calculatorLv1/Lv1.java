@@ -1,5 +1,6 @@
 package com.example.calculatorLv1;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Lv1 {
@@ -51,7 +52,7 @@ public class Lv1 {
                                 continue; // 다음 루프로 넘어감
                             }
                         default:
-                            System.out.println("잘못된 입력입니다."); // 잘못된 연산자 입력 시 경고 메시지
+                            System.out.println("잘못된 연산자입니다."); // 잘못된 연산자 입력 시 경고 메시지
                             continue; // 다음 루프로 넘어감
                     }
 
@@ -60,10 +61,11 @@ public class Lv1 {
                     System.out.println("계산기를 계속 이용하시겠습니까? (종료하실 경우 exit 입력)");
                     power = sc.nextLine(); // 사용자에게 계속 사용할지 여부 물어보기
 
-                } catch (Exception e) {
-                    // 예외 발생 시 처리
-                    System.out.println("정수 값만 입력해야합니다."); // 정수가 아닌 값을 입력한 경우 경고 메시지
+                } catch (InputMismatchException e) {
+                    System.out.println("잘못된 입력입니다. 정수를 입력해주세요."); // 숫자 입력 오류
                     sc.nextLine(); // 잘못된 입력을 처리하기 위해 입력 버퍼 비우기
+                } catch (IllegalArgumentException  e) {
+                    System.out.println(e.getMessage()); // 연산자 입력 오류
                 }
             }
         }
