@@ -30,11 +30,12 @@ public class Menu {
 
     // MenuItem 리스트 출력
     public void displayMenuItems() {
-        System.out.printf("%-25s %-10s %s%n", "메뉴 이름", "가격", "설명"); // 헤더 출력
+        System.out.printf("%-22s %-15s %s%n", "메뉴 이름", "가격", "설명"); // 헤더 출력
         System.out.println("--------------------------------------------------");
         for (int i = 0; i < menuItems.size(); i++) {
             MenuItem item = menuItems.get(i);
-            System.out.printf("%d. %-25s W %-8.2f %s%n", i + 1, item.getName(), item.getPrice(), item.getDescription());
+            // 출력 형식 조정
+            System.out.printf("%d. %-20s | W %-8.2f | %s%n", i + 1, item.getName(), item.getPrice(), item.getDescription());
         }
     }
 }
